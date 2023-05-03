@@ -41,7 +41,7 @@
 <body>
   <nav class="navbar navbar-dark bg-mynav">
     <div class="container-fluid">
-      <a class="navbar-brand text-black float-start inline-block position-absolute mt-4" href="#">MagicHeal <img style="height: 30px; width: 40px;" src="/assets/images/Steth.jpg" alt="Image"></a>
+      <a class="navbar-brand text-black float-start inline-block position-absolute mt-4" href="#">MagicHeal <img style="height: 30px; width: 40px; border-radius: 50%; " class="mx-1" src="./assets/images/arlo.png" alt="Image"></a>
       
     </div>
   
@@ -51,16 +51,16 @@
   </nav>
 
 
-  <div class="container">
+  <div class="container" >
     <div class="d-flex bd-highlight mb-3">
-      <div class="me-auto p-2 bd-highlight "><h2 class="text-center">Patients</h2></div>
+      <div class="me-auto p-2 bd-highlight fw-bold"><h2 class="text-center">Patients</h2></div>
       <div class="p-2 bd-highlight">
         <button type="button" style="padding-bottom: 25px;" class="button2 w-100 h-75 fw-bold fs-6 text-center" onclick="showUserCreateBox()">Create</button>
       </div>
     </div>
 
     <div class="table-responsive">
-        <table class="table align-middle mb-0 bg-white">
+        <table  class="table align-middle mb-0 bg-white">
   <thead class="bg-light">
     <tr>
       <th>Patient No</th>
@@ -83,6 +83,7 @@
 </table>
     </div>
     
+    <p id="num"></p>
 </body>
 </html>
 

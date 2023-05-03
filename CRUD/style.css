@@ -2,6 +2,35 @@
     height: 50px;
     width: 50px;
 }
+table,thead{
+  background: #c2e59c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+nav{
+  background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+body{
+  background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* table  */
+table,th {
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+td, th {
+  padding: 10px;
+  border: 1px solid black;
+}
 
 /* search bar  */
 .input {
@@ -40,8 +69,8 @@
     border-radius: 0.5em;
     background: #e8e8e8;
     border: 1px solid #e8e8e8;
-    box-shadow: 6px 6px 12px #c5c5c5,
-               -6px -6px 12px #ffffff;
+    box-shadow: 1px 1px 6px #c5c5c5,
+               -1px -1px 6px #ffffff;
   }
   
   .button2:active {
