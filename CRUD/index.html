@@ -41,11 +41,12 @@
 <body>
   <nav class="navbar navbar-dark bg-mynav">
     <div class="container-fluid">
-      <a class="navbar-brand text-black float-start inline-block position-absolute mt-4" href="#">MagicHeal <img style="height: 30px; width: 40px; border-radius: 50%; " class="mx-1" src="./assets/images/arlo.png" alt="Image"></a>
+      <a style="font-family: Verdana, Geneva, Tahoma, sans-serif" class="navbar-brand text-black float-start inline-block position-absolute mt-5" href="#">MagicHeal <img style="height: 30px; width: 40px; border-radius: 50%; " class="mx-1" src="./assets/images/arlo.avif" alt="Image"></a>
+
       
     </div>
   
-    <input id="searchvalue"  onkeyup="search()" class="input float-left ms-auto mx-5 position-relative" name="text" placeholder="Search..." type="search">
+    <input id="searchvalue"  onkeyup="search()" class="input float-left ms-auto mx-5 position-relative mt-1" name="text" placeholder="Search..." type="search">
 
     
   </nav>
@@ -53,7 +54,7 @@
 
   <div class="container" >
     <div class="d-flex bd-highlight mb-3">
-      <div class="me-auto p-2 bd-highlight fw-bold"><h2 class="text-center">Patients</h2></div>
+      <div class="me-auto p-2 bd-highlight fw-bold"><h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="text-center">Patients</h2></div>
       <div class="p-2 bd-highlight">
         <button type="button" style="padding-bottom: 25px;" class="button2 w-100 h-75 fw-bold fs-6 text-center" onclick="showUserCreateBox()">Create</button>
       </div>
@@ -84,6 +85,8 @@
     </div>
     
     <p id="num"></p>
+
+
 </body>
 </html>
 

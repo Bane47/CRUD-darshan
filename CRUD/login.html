@@ -1,0 +1,97 @@
+<!-- Admin name : Admin
+Password : Password123 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+rel="stylesheet"
+/>
+
+<!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
+></script>
+<!-- Sweet alert cdn  -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+
+<!-- jquery for the login  -->
+<script>
+    function validation() {
+      let Name = document.getElementById("name").value.toLowerCase();
+      let Password = document.getElementById("typePasswordX-2").value.toLowerCase();
+     
+      if(Name=="" ||Password=="" ){
+        Swal.fire({
+    title: "Please enter the Admin name and the pasword",
+    icon:"error",
+    showConfirmButton: true
+})
+      }
+      if (Name == "admin" && Password == "password123") {
+        location.replace("/index.html")
+      }
+      else {
+Swal.fire({
+    title: "Invalid Username or Password",
+    icon:"error",
+    showConfirmButton: true
+})
+      
+    }}
+  </script>
+</head>
+<body>
+
+    <section class="vh-100" style="background-color: #508bfc;">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <h3 class="mb-5">Admin Login</h3>
+      
+                  <div class="form-outline mb-4">
+                    <input type="Text" id="name" class="form-control form-control-lg" />
+                    <label class="form-label" for="name">Name</label>
+                  </div>
+      
+                  <div class="form-outline mb-4">
+                    <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+                    <label class="form-label" for="typePasswordX-2">Password</label>
+                  </div>
+      
+      
+                  <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="validation()">Login</button>
+      
+                  <hr class="my-4">
+      
+                  
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+</body>
+</html>

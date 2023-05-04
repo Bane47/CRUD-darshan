@@ -2,6 +2,8 @@
     height: 50px;
     width: 50px;
 }
+
+
 table,thead{
   background: #c2e59c;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
