@@ -26,6 +26,15 @@
       "Complaint": "Temporary Memory loss",
       "PatientImage": "./assets/images/sivaji.png",
       "id": 3
+    },
+    {
+      "PatientName": "Barack Obama",
+      "Age": "56",
+      "Sex": "male",
+      "VisitingDate": "2023-02-09T09:27",
+      "Complaint": "Low Sugar",
+      "PatientImage": "./assets/images/obama.png",
+      "id": 4
     }
   ]
 }
